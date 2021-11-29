@@ -1,0 +1,8 @@
+Deploy Blue/main
+Deploy_Blue_main
+Deploy Green/main
+Deploy_Green_main
+Swich Blue To Green/main
+Swich_Blue_To_Green_main
+Swich Green To Blue/main
+Swich_Green_To_Blue_main
