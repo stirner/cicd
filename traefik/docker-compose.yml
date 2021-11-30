@@ -85,6 +85,30 @@ services:
       restart_policy:
         condition: on-failure
 
+  jenkins:
+    image: myregistry.local:5000/jenkins:latest
+    depends_on:
+      - grafana
+    deploy:
+      labels:
+        - "traefik.http.routers.jenkins.rule=Host(`jenkins.localhost`)"
+        - "traefik.http.routers.jenkins.service=jenkins"
+        - "traefik.http.services.jenkins.loadbalancer.server.port=8080"
+        - "traefik.docker.network=inbound"
+      placement:
+        constraints:
+          - "node.hostname==manager"
+    extra_hosts:
+      - "myregistry.local:10.100.199.200"
+    volumes:
+       - /var/run/docker.sock:/var/run/docker.sock
+       - type: bind
+         source: ./jenkins/home
+         target: /var/jenkins_home    
+       - type: bind
+         source: ~/.ssh
+         target: /var/jenkins_home/.ssh
+
 networks:
   traefik:
     driver: overlay
