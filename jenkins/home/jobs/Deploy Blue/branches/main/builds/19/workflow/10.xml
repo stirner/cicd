@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2633.v6baeedc13805">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2633.v6baeedc13805">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=main</string>
+            <string>GIT_COMMIT=f03955a9c53264030ec4be787be056adaa580d19</string>
+            <string>GIT_LOCAL_BRANCH=main</string>
+            <string>GIT_PREVIOUS_COMMIT=94ac6a3e7885929bc5bea5a3fa7514f6c41331ab</string>
+            <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=94ac6a3e7885929bc5bea5a3fa7514f6c41331ab</string>
+            <string>GIT_URL=https://github.com/stirner/apiSample.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.47">
+      <startTime>1638290409023</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

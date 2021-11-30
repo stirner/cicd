@@ -1,0 +1,11 @@
+commit 793d3f4324d431172ecd008264a4b092e507a059
+tree 5350fcec26376231801a9e3356f373f11bd79197
+parent f03955a9c53264030ec4be787be056adaa580d19
+author stirner <stirner.htc@gmail.com> 2021-11-30 17:47:55 +0100
+committer GitHub <noreply@github.com> 2021-11-30 17:47:55 +0100
+
+    Update buildgreen
+    
+    change color error
+
+:100644 100644 c99c07f9de8cfacf1f83d685598942d438ae6e82 4e7fd5febe33f1c427caf6f07678ce70c98eaf4c M	jenkins/buildgreen

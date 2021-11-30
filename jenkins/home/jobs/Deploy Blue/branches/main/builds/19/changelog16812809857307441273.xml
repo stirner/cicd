@@ -1,0 +1,11 @@
+commit f03955a9c53264030ec4be787be056adaa580d19
+tree cfa1100faa097359a2ca82fd40aaa625ba22e010
+parent 94ac6a3e7885929bc5bea5a3fa7514f6c41331ab
+author stirner <stirner.htc@gmail.com> 2021-11-30 17:39:54 +0100
+committer GitHub <noreply@github.com> 2021-11-30 17:39:54 +0100
+
+    Update appli-blue.yml
+    
+    change tag blue
+
+:100644 100644 4f61d7abd9ef85c893fccfdaee6f111838f6cafd a0d3f283b3a2a302df5d8f8ef488b385e832ac20 M	jenkins/appli-blue.yml
