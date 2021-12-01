@@ -87,6 +87,8 @@ services:
 
   jenkins:
     image: myregistry.local:5000/jenkins:latest
+    networks:
+      - inbound
     depends_on:
       - grafana
     deploy:
