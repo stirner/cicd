@@ -51,7 +51,7 @@ services:
       - inbound
     deploy:
       labels:
-       - "traefik.http.routers.prometheus.rule=Host(`prometheus.localhost`)"
+       - "traefik.http.routers.prometheus.rule=Host(`prometheus.int`)"
        - "traefik.http.routers.prometheus.service=prometheus"
        - "traefik.http.services.prometheus.loadbalancer.server.port=9090"
        - "traefik.docker.network=inbound"
@@ -75,7 +75,7 @@ services:
     user: "104"
     deploy:
       labels:
-        - "traefik.http.routers.grafana.rule=Host(`grafana.localhost`)"
+        - "traefik.http.routers.grafana.rule=Host(`grafana.int`)"
         - "traefik.http.routers.grafana.service=grafana"
         - "traefik.http.services.grafana.loadbalancer.server.port=3000"
         - "traefik.docker.network=inbound"
@@ -93,7 +93,7 @@ services:
       - grafana
     deploy:
       labels:
-        - "traefik.http.routers.jenkins.rule=Host(`jenkins.localhost`)"
+        - "traefik.http.routers.jenkins.rule=Host(`jenkins.int`)"
         - "traefik.http.routers.jenkins.service=jenkins"
         - "traefik.http.services.jenkins.loadbalancer.server.port=8080"
         - "traefik.docker.network=inbound"

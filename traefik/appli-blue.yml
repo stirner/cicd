@@ -14,7 +14,7 @@ services:
       labels:
         - "traefik.http.routers.colors-blue.priority=100"
         - "traefik.http.routers.colors-blue.rule=Path(`/`)"
-        - "traefik.http.routers.colors-blue.rule=Host(`apisample.localhost`)"
+        - "traefik.http.routers.colors-blue.rule=Host(`apisample.int`)"
         - "traefik.http.routers.colors-blue.service=colors-blue"
         - "traefik.http.services.colors-blue.loadbalancer.server.port=8080"
         - "traefik.docker.network=inbound"
